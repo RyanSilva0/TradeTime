@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+@layer utilities {
+  .font-Forum {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .font-Oswald{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  .bg-wallpaper{
+    background-image: url("/assets/wallpaper.png");
+  }
+  .font-h1{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .font-russo{
+     font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .bg-wallpaper-2{
+    background-image: url("/assets/wallpaper-2.png");
+  }
+  .bg-wallpaper-3{
+    background-image: url("/assets/wallpaper-3.png");
+  }
+}
+
