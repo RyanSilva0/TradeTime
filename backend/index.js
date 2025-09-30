@@ -1,4 +1,4 @@
-//Variaveis de cadastro
+
 async function cadastrarUsuario() {
   const nome = document.getElementById("cadastro-nome").value;
   const email = document.getElementById("cadastro-email").value;
@@ -30,14 +30,14 @@ async function cadastrarUsuario() {
   const email = document.getElementById("email_login").value;
   const senha = document.getElementById("password_login").value;
 
-  // Validação básica
+  
   if (!email || !senha) {
     alert("Por favor, preencha email e senha!");
     return;
   }
 
   try {
-    const response = await fetch("http://localhost:3000/login", { // ✅ ROTA CORRIGIDA
+    const response = await fetch("http://localhost:3000/login", { 
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, senha })
@@ -48,7 +48,7 @@ async function cadastrarUsuario() {
 
     if (data.sucesso) {
       alert(data.mensagem);
-      window.location.href = "/Home.html"; // ✅ CAMINHO CORRIGIDO
+      window.location.href = "/Home.html";
     } else {
       alert(data.mensagem || "Erro no login");
     }
@@ -95,3 +95,4 @@ async function deletarUsuario(id) {
     console.error("Erro:", error);
   }
 }
+
